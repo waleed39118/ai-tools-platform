@@ -1,0 +1,36 @@
+✅ MongoDB Connected
+🗑️ Cleared existing data
+👤 Admin user created
+👤 Regular user created
+📍 Part locations created
+❌ Seeding error: MongoBulkWriteError: E11000 duplicate key error collection: SparePartsapp.carmodels index: name_1 dup key: { name: "Honda CR-V" }
+    at OrderedBulkOperation.handleWriteError (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\bulk\common.js:817:19)
+    at executeCommands (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\bulk\common.js:346:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\bulk\common.js:521:16)
+    at async tryOperation (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async OrderedBulkOperation.execute (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\bulk\common.js:806:16)
+    at async BulkWriteOperation.execute (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\operations\bulk_write.js:34:16)
+    at async InsertManyOperation.execute (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\operations\insert.js:82:25)
+    at async tryOperation (C:\Users\LENOVO\code\ga\bractis\autoparts-pro-final\used-autoparts-pro\node_modules\mongodb\lib\operations\execute_operation.js:207:20) {
+  errorLabelSet: Set(0) {},
+  errorResponse: {
+    message: 'E11000 duplicate key error collection: SparePartsapp.carmodels index: name_1 dup key: { name: "Honda CR-V" }',
+    code: 11000,
+    writeErrors: [ [Object] ]
+  },
+  code: 11000,
+  writeErrors: [ { err: [Object], index: 0 } ],
+  result: BulkWriteResult {
+    insertedCount: 0,
+    matchedCount: 0,
+    modifiedCount: 0,
+    deletedCount: 0,
+    upsertedCount: 0,
+    upsertedIds: {},
+    insertedIds: {}
+  },
+  insertedDocs: []
+}
+[nodemon] app crashed - waiting for file changes before starting...
